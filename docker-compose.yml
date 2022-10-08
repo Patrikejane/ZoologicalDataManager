@@ -6,3 +6,9 @@ services:
             context: ./Jserver
         ports:
             - "8080:8080"
+    pythonserver:
+        build:
+            dockerfile: Dockerfile
+            context: ./Pserver
+        ports:
+            - "5000:5000"
